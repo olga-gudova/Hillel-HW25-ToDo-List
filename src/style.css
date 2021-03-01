@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+/* h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
+
+body {
+    font-size: 18px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("img/bodybackground.jpg"); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    max-width: 700px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+p {
+    padding: 1em 0;
+}
+.form {    
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type='text'], input[type='email'], input[type='password'] {
+    min-height: 40px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    padding: 0 8px;
+    flex: 1 1 auto;
+    margin-right: 5px;
+    font-size: inherit;
+}
+
+.btn {
+    min-height: 40px;
+    padding: 0 8px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    font-size: inherit;
+}
+
+.list:empty + .empty-state {
+    display: block;
+}
+
+.list__item {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    min-height: 40px;
+    align-items: center;
+}
+.item__check {
+    height: 30px;
+    width: 30px;
+    flex: 0 1 auto;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+}
+
+.item__content {
+    flex: 1 0 auto;
+    padding: 0 8px;
+}
+
+.item__edit, .item__delete, .item__check {
+    height: 30px;
+    width: 30px;    
+    margin: 5px;
+}
+
+.checked {
+    background: url('img/confirm.svg');
+}
+
+.item__edit {
+    background: url('img/edit.svg');
+}
+
+.edit-confirm {
+    background: url('img/confirm.svg');
+}
+.edit__field {
+    width: 100%;
+}
+
+.item__delete {
+    background: url('img/garbage.svg');
+}
+
+.add__form {
+    margin: 1em 0;
+}
